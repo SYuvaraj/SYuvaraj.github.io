@@ -315,3 +315,15 @@ header.masthead p {
   height: 100px;
   display: inline-block;
 }
+
+#training {
+  background-color: #ffffff;
+}
+
+#training h2, #training p {
+  color: #212529 !important;
+}
+
+#training p {
+  color: #6c757d !important;
+}
