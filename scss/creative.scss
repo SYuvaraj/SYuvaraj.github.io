@@ -18,3 +18,43 @@
 #training  p{
 	color:#6c757d !important;
 }
+#mainNav {
+    border-color: transparent;
+    background-color: #ffffff;
+}
+#mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+    color: #212529;
+}
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:hover{color:#f05f40 }
+#mainNav .navbar-brand {
+    color: #f05f40;
+}
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{color: #f05f40; }
+#mainNav .navbar-brand span{ 
+	margin-left:85px;
+	color: #212529;
+}
+
+header.masthead{
+	height:auto;
+	position: relative;
+}
+.hlogo {
+    position: absolute;
+    bottom: -35px;
+}
+.hlogo img{
+	width: 555px;
+	-webkit-box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.75);
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 640px) {
+	#mainNav .navbar-brand span{margin-left: 0;}
+}
+@media only screen and (max-width: 460px) {
+	.navbar-brand{ font-size: 0.8em;}
+	.logo { height: 80px;}
+}
