@@ -38,7 +38,8 @@
 header.masthead{
 	height:auto;
 	position: relative;
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .hlogo {
     position: absolute;
@@ -51,10 +52,25 @@ header.masthead{
 	-moz-box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.75);
 	box-shadow: 0px 6px 5px 5px rgba(0,0,0,0.75);
 }
-
+.portfolio-box{cursor: default;}
+.popup-gallery>div{height: 360px;}
 /*Media Queries*/
+@media only screen and (max-width: 991px) {
+
+  header.masthead{padding-top: 425px !important;}
+#portfolio > div > div > div:nth-child(3) > a{margin-top: 25px !important;}
+}
+
 @media only screen and (max-width: 640px) {
+	#portfolio > div > div > div:nth-child(3) > a{
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}
+	.hlogo{left:0;}
 	#mainNav .navbar-brand span{margin-left: 0;}
+	.hlogo img {
+	    width: 70%
+	}
 }
 @media only screen and (max-width: 460px) {
 	.navbar-brand{ font-size: 0.8em;}
